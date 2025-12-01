@@ -1,54 +1,52 @@
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #f9f9f9;
-  color: #222;
-  text-align: center;
-  margin: 0;
-  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #fafafa;
 }
 
 h1 {
-  color: #2b2b2b;
+  text-align: center;
   margin-bottom: 10px;
 }
 
 #controls {
-  margin: 20px;
+  margin: 20px 0;
+  text-align: center;
 }
 
-select,
-button {
-  padding: 6px 12px;
-  margin: 0 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  cursor: pointer;
+#links {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-button:hover,
-select:hover {
-  background-color: #eaeaea;
-}
-
-svg {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-}
-
-.axis-label {
+#links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #0057d9;
   font-weight: bold;
-  fill: #333;
 }
 
 .tooltip {
   position: absolute;
   background: white;
-  padding: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 6px;
-  border: 1px solid #999;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
   pointer-events: none;
-  font-size: 13px;
+  opacity: 0;
+  font-size: 14px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+
+.axis-label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+svg {
+  display: block;
+  margin: 20px auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
